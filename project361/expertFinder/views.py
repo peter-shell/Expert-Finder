@@ -30,7 +30,7 @@ def display_expert(request, pk):
     return render(request, "display_expert.html", results)
 
 def search_results(request):
-    search_for = request.POST
+    search_for = request.GET
     print(search_for)
     print(request.POST)
     # POST returns dict value, need to search db by type for value specified, then
